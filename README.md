@@ -96,48 +96,7 @@ The React app will be available at `http://localhost:3000`
 
 ## 📡 API Endpoints
 
-### Authentication
-- `POST /api/auth/register/` - User registration
-- `POST /api/auth/login/` - User login
-
-### User Management
-- `GET /api/user/` - Get current user information (requires authentication)
-
-### Profile Management
-- `GET /api/profile/` - Get user profile (requires authentication)
-- `PUT /api/profile/update/` - Update user profile (requires authentication)
-
-### API Usage Examples
-
-#### Register a new user:
-```bash
-curl -X POST http://localhost:8000/api/auth/register/ \
-  -H "Content-Type: application/json" \
-  -d '{
-    "username": "testuser",
-    "email": "test@example.com",
-    "password": "testpass123",
-    "password_confirm": "testpass123",
-    "first_name": "Test",
-    "last_name": "User"
-  }'
-```
-
-#### Login:
-```bash
-curl -X POST http://localhost:8000/api/auth/login/ \
-  -H "Content-Type: application/json" \
-  -d '{
-    "username": "testuser",
-    "password": "testpass123"
-  }'
-```
-
-#### Get user profile (with JWT token):
-```bash
-curl -X GET http://localhost:8000/api/profile/ \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN"
-```
+### No Endpoints yet
 
 ## 🔧 Configuration
 
@@ -158,14 +117,7 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 
 ## 🗄️ Database Models
 
-### User Profile Model
-- `user`: One-to-one relationship with Django User
-- `bio`: Text field for user biography
-- `location`: Char field for user location
-- `birth_date`: Date field for birth date
-- `avatar`: Image field for profile picture
-- `created_at`: Auto-generated creation timestamp
-- `updated_at`: Auto-generated update timestamp
+### No Models yet
 
 ## 🔒 Authentication
 
